@@ -112,6 +112,16 @@
 }
 
 
+.button-container .btn {
+	background-color: white;
+	border: none;
+}
+
+.btn:focus {
+	color: #757575;
+	outline: none;
+}
+
 
 /*Media screen*/
 

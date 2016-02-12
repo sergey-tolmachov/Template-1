@@ -45,12 +45,89 @@
 
     <!-- Button block -->
     <div class="button-container">
-      <span class="answ-not-sure icon-not-sure"></span>
-      <span class="answ-yes icon-yes"></span>
-      <span class="answ-no icon-no"></span>
+      <button type="button" class="answ-not-sure icon-not-sure btn" data-toggle="modal" data-target="#exampleModalnotsure" data-whatever="@mdo"></button>
+      <button type="button" class="answ-yes icon-yes btn" data-toggle="modal" data-target="#exampleModalyes" data-whatever="@fat"></button>
+      <button type="button" class="answ-no icon-no btn" data-toggle="modal" data-target="#exampleModalno" data-whatever="@getbootstrap"></button>
     </div>
 
-    
+    <!-- Modal Form (yes)-->
+
+    <div class="modal fade" id="exampleModalyes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">Я прийду :)</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="first-name" value="Имя">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="last-name" value="Фамилия">
+              </div>
+              <select class="form-control">
+                <option>папа невесты</option>
+                <option>папа жениха</option>
+                <option>друг семьи</option>
+                <option>сестра</option>
+                <option>случайный прохожий</option>
+              </select>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Form (no)-->
+
+    <div class="modal fade" id="exampleModalno" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">Я не смогу прийти :(</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="first-name" value="Имя">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="last-name" value="Фамилия">
+              </div>
+              <select class="form-control">
+                <option>папа невесты</option>
+                <option>папа жениха</option>
+                <option>друг семьи</option>
+                <option>сестра</option>
+                <option>случайный прохожий</option>
+              </select>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Form (not sure)-->
+
+    <div class="modal fade" id="exampleModalnotsure" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            ...
+
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
